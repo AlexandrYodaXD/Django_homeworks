@@ -14,3 +14,5 @@ INFO 2024-02-15 14:21:13,600 basehttp 8416 19300 "GET /hw_1/about/ HTTP/1.1" 200
 INFO 2024-02-15 14:21:14,032 basehttp 8416 19300 "GET /hw_1/main/ HTTP/1.1" 200 204
 INFO 2024-02-15 14:21:15,028 basehttp 8416 19300 "GET /hw_1/about/ HTTP/1.1" 200 222
 INFO 2024-02-15 14:21:15,669 basehttp 8416 19300 "GET /hw_1/main/ HTTP/1.1" 200 204
+INFO 2024-02-15 23:26:45,671 autoreload 21368 3376 Watching for file changes with StatReloader
+INFO 2024-02-15 23:27:49,890 autoreload 21892 15788 Watching for file changes with StatReloader
