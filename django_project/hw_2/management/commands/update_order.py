@@ -47,7 +47,7 @@ class Command(BaseCommand):
         with transaction.atomic():
             try:
                 if operation in ['add', 'remove']:
-                    order.update_products(operation, product_quantities)
+                    order.update_order(operation, product_quantities)
                     self.stdout.write(self.style.SUCCESS(f'Order {order.id} updated successfully'))
                 else:
                     self.stdout.write(self.style.ERROR('Invalid operation'))

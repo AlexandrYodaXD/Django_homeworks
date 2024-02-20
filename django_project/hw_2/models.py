@@ -11,6 +11,7 @@ class Client(models.Model):
     phone = models.CharField(max_length=20)
     address = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
+    is_deleted = models.BooleanField(default=False)
 
 
 class Product(models.Model):
@@ -19,6 +20,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     count = models.PositiveIntegerField(default=0, validators=[MinValueValidator(0)])
     created_at = models.DateTimeField(auto_now_add=True)
+    is_deleted = models.BooleanField(default=False)
 
 
 class Order(models.Model):
@@ -26,31 +28,35 @@ class Order(models.Model):
     order_items = models.ManyToManyField(Product, through='OrderItem')
     total_price = models.DecimalField(max_digits=10, decimal_places=2, default=Decimal('0.00'))
     created_at = models.DateTimeField(auto_now_add=True)
+    is_deleted = models.BooleanField(default=False)
 
     def update_total_price(self):
         total_price = sum(item.product.price * item.quantity for item in OrderItem.objects.filter(order_id=self.id))
         self.total_price = total_price
         Order.objects.filter(id=self.id).update(total_price=total_price)
 
-    def create_order(self, product_quantities: dict[Product, int]):
-        if not self.id:
-            self.save()
+    # TODO: На удаление, функционал дублируется в update_order
+    # def create_order(self, product_quantities: dict[Product, int]):
+    #     if not self.id:
+    #         self.save()
+    #
+    #     for product, quantity in product_quantities.items():
+    #         if 0 < quantity <= product.count:
+    #             item = OrderItem(order=self, product=product, quantity=quantity)
+    #             product.count -= quantity  # Уменьшаем количество продукта на складе
+    #
+    #             item.save()
+    #             product.save()
+    #         else:
+    #             self.is_deleted = True
+    #             self.save()
+    #             raise ValidationError(
+    #                 f'Invalid quantity for product {product.name}. Current quantity: {product.count}, '
+    #                 f'but requested quantity: {quantity}')
+    #
+    #     self.update_total_price()  # Обновляем общую стоимость заказа
 
-        for product, quantity in product_quantities.items():
-            if 0 < quantity <= product.count:
-                item = OrderItem(order=self, product=product, quantity=quantity)
-                product.count -= quantity  # Уменьшаем количество продукта на складе
-
-                item.save()
-                product.save()
-            else:
-                raise ValidationError(
-                    f'Invalid quantity for product {product.name}. Current quantity: {product.count}, '
-                    f'but requested quantity: {quantity}')
-
-        self.update_total_price()  # Обновляем общую стоимость заказа
-
-    def update_products(self, operation: str, product_quantities: dict[Product, int]):
+    def update_order(self, operation: str, product_quantities: dict[Product, int]):
         with transaction.atomic():
             # Получаем текущие записи о товарах в заказе
             order_items = OrderItem.objects.filter(order_id=self.id)
@@ -68,7 +74,7 @@ class Order(models.Model):
                             order_items.create(order=self, product=product, quantity=quantity)
                             product.count -= quantity
                             product.save()
-                            order_items.save()
+                            # order_items.save()
                     else:
                         raise ValidationError(f'Invalid quantity for product {product.name}. '
                                               f'Current quantity: {product.count}, '
@@ -86,6 +92,8 @@ class Order(models.Model):
                         raise ValidationError(f'Product {product.name} not found in order')
                 else:
                     raise ValidationError('Invalid operation')
+
+        self.update_total_price()
 
     def save(self, *args, **kwargs):
         with transaction.atomic():

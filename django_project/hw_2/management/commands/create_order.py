@@ -2,7 +2,7 @@ from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from django.core.management.base import BaseCommand
 from django.db import transaction
 # noinspection PyUnresolvedReferences
-from hw_2.models import Order, Product
+from hw_2.models import Order, Product, Client
 
 
 class Command(BaseCommand):
@@ -37,8 +37,9 @@ class Command(BaseCommand):
         with transaction.atomic():
             try:
                 # Создаем заказ
-                order = Order(client_id=client_id)
-                order.create_order(product_quantities)
+                client = Client.objects.get(id=client_id)
+                order = Order.objects.create(client=client)
+                order.update_order('add', product_quantities)
 
                 # Добавляем продукты в заказ
             except ValidationError as e:

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Статистика заказов по продуктам{% endblock %}
+
+{% block content %}
+    <h1>Статистика заказов продуктов клиента
+        <a href="{% url 'get_client_by_id' client.id %}">{{ client.name }}</a></h1>
+
+    <h2>Статистика за последнюю неделю</h2>
+    {% if product_statistics_week %}
+        <table border="1">
+            <tr>
+                <th>Продукт</th>
+                <th>Количество</th>
+            </tr>
+            {% for order_item in product_statistics_week %}
+                <tr>
+                    <td><a href="{% url 'get_product_by_id' order_item.product__id %}">
+                                {{  order_item.product__name }}</a></td>
+                    <td>{{ order_item.total_quantity }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Нет данных о заказах за последнюю неделю.</p>
+    {% endif %}
+
+    <h2>Статистика за последний месяц</h2>
+    {% if product_statistics_month %}
+        <table border="1">
+            <tr>
+                <th>Продукт</th>
+                <th>Количество</th>
+            </tr>
+            {% for order_item in product_statistics_month %}
+                <tr>
+                    <td><a href="{% url 'get_product_by_id' order_item.product__id %}">
+                                {{  order_item.product__name }}</a></td>
+                    <td>{{ order_item.total_quantity }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Нет данных о заказах за последний месяц.</p>
+    {% endif %}
+
+    <h2>Статистика за последний год</h2>
+    {% if product_statistics_year %}
+        <table border="1">
+            <tr>
+                <th>Продукт</th>
+                <th>Количество</th>
+            </tr>
+            {% for order_item in product_statistics_year %}
+                <tr>
+                    <td><a href="{% url 'get_product_by_id' order_item.product__id %}">
+                                {{  order_item.product__name }}</a></td>
+                    <td>{{ order_item.total_quantity }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>Нет данных о заказах за последний год.</p>
+    {% endif %}
+{% endblock %}

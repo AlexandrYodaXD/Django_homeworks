@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Информация о продукте{% endblock %}
+
+{% block content %}
+    <h1>Информация о продукте</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <td>{{ product.id }}</td>
+        </tr>
+        <tr>
+            <th>Дата создания</th>
+            <td>{{ product.created_at }}</td>
+        </tr>
+        <tr>
+            <th>Название</th>
+            <td>{{ product.name }}</td>
+        </tr>
+        <tr>
+            <th>Описание</th>
+            <td>{{ product.description }}</td>
+        </tr>
+        <tr>
+            <th>Цена</th>
+            <td>{{ product.price }}$</td>
+        </tr>
+        <tr>
+            <th>Остаток</th>
+            <td>{{ product.count }}</td>
+        </tr>
+    </table>
+{% endblock %}
