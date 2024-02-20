@@ -3454,3 +3454,33 @@ INFO 2024-02-20 17:28:58,695 autoreload 17604 25760 Watching for file changes wi
 INFO 2024-02-20 17:28:59,722 basehttp 17604 28996 "GET /orders/ HTTP/1.1" 200 48871
 INFO 2024-02-20 17:29:48,104 autoreload 17604 25760 C:\GeekBrains\Django_hw\django_project\hw_2\models.py changed, reloading.
 INFO 2024-02-20 17:29:48,613 autoreload 29120 7548 Watching for file changes with StatReloader
+INFO 2024-02-20 17:45:19,662 autoreload 10972 26988 Watching for file changes with StatReloader
+INFO 2024-02-20 17:50:29,807 autoreload 32056 9608 Watching for file changes with StatReloader
+INFO 2024-02-20 17:51:00,565 autoreload 35436 628 Watching for file changes with StatReloader
+INFO 2024-02-20 17:51:52,594 autoreload 27632 31616 Watching for file changes with StatReloader
+INFO 2024-02-20 17:53:27,482 autoreload 32224 26892 Watching for file changes with StatReloader
+INFO 2024-02-20 17:54:03,915 autoreload 33748 26408 Watching for file changes with StatReloader
+INFO 2024-02-20 18:03:02,279 autoreload 25584 30716 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:12,032 autoreload 25584 30716 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:12,047 autoreload 35436 628 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:12,544 autoreload 32224 26892 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:12,744 autoreload 15848 33200 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:12,745 autoreload 35256 30748 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:13,280 autoreload 32044 9372 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:29,567 autoreload 35256 30748 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:29,581 autoreload 15848 33200 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:30,001 autoreload 32044 9372 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-20 18:06:30,141 autoreload 19024 34080 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:30,567 autoreload 35344 28156 Watching for file changes with StatReloader
+INFO 2024-02-20 18:06:41,952 autoreload 28428 17172 Watching for file changes with StatReloader
+INFO 2024-02-20 18:09:38,866 autoreload 28460 12460 Watching for file changes with StatReloader
+INFO 2024-02-20 18:23:24,338 autoreload 5936 33648 Watching for file changes with StatReloader
+INFO 2024-02-20 18:24:49,945 autoreload 33924 14988 Watching for file changes with StatReloader
+INFO 2024-02-20 18:26:10,551 autoreload 23160 28232 Watching for file changes with StatReloader
+INFO 2024-02-20 18:26:21,945 basehttp 23160 31328 "GET / HTTP/1.1" 200 537
+INFO 2024-02-20 18:26:24,986 basehttp 23160 31328 "GET /clients/ HTTP/1.1" 200 7530
+INFO 2024-02-20 18:26:27,238 basehttp 23160 31328 "GET /products/ HTTP/1.1" 200 14161
+INFO 2024-02-20 18:26:40,463 basehttp 23160 31328 "GET /orders/ HTTP/1.1" 200 48542
+INFO 2024-02-20 18:27:53,569 autoreload 3276 9332 Watching for file changes with StatReloader
+INFO 2024-02-20 18:27:56,281 basehttp 3276 2156 "GET /orders/ HTTP/1.1" 200 49202
+INFO 2024-02-20 18:28:13,340 basehttp 3276 2156 "GET /products/ HTTP/1.1" 200 14196

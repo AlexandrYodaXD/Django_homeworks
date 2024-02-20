@@ -1,4 +1,5 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
+from django.utils import timezone
 from django.shortcuts import render, get_object_or_404
 from django.db.models import Sum
 from hw_2.models import Client, Product, Order, OrderItem
@@ -46,7 +47,7 @@ def get_product_order_statistics_view(request, client_id):
     client = get_object_or_404(Client, id=client_id)
 
     # Определяем временные интервалы: за последнюю неделю, месяц и год
-    end_date = datetime.now()
+    end_date = timezone.now()
     start_week = end_date - timedelta(days=7)
     start_month = end_date - timedelta(days=30)  # Месяц считаем как 30 дней
     start_year = end_date - timedelta(days=365)  # Год считаем как 365 дней
