@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Заказы{% endblock %}
+
+{% block content %}
+    <h1>Заказы</h1>
+    {% for order in orders %}
+        <h2><a href="{% url 'get_order_by_id' order.id %}">Заказ #{{ order.id }}</a>
+            от {{ order.created_at }}</h2>
+        <table border="1">
+            <tr>
+                <th>Клиент</th>
+                <td><a href="{% url 'get_client_by_id' order.client.id %}">{{ order.client.name }}</a></td>
+            </tr>
+            <tr>
+                <th>Товары</th>
+                <td>
+                    <ul>
+                        <table border="1">
+                            <tr>
+                                <th>Название</th>
+                                <th>Цена</th>
+                                <th>шт.</th>
+                            </tr>
+
+                        {% for order_item in order.orderitem_set.all %}
+                            <tr>
+                                <th><a href="{% url 'get_product_by_id' order_item.product.id %}">
+                                {{  order_item.product.name }}</a></th>
+                                <th>{{ order_item.product.price }}$</th>
+                                <th>{{ order_item.quantity }}</th>
+                            </tr>
+                        {% endfor %}
+                        </table>
+                    </ul>
+                </td>
+
+            </tr>
+            <tr>
+                <th>Сумма</th>
+                <td>{{ order.total_price }}$</td>
+            </tr>
+        </table>
+    {% endfor %}
+{% endblock %}

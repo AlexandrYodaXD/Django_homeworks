@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Клиенты{% endblock %}
+
+{% block content %}
+    <h1>Клиенты</h1>
+    {% for client in clients %}
+        <h2><a href="{% url 'get_client_by_id' client.id %}">Клиент #{{ client.id }}</a></h2>
+        <table border="1">
+            <tr>
+                <th>Имя</th>
+                <td>{{ client.name }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ client.email }}</td>
+            </tr>
+            <tr>
+                <th>Телефон</th>
+                <td>{{ client.phone }}</td>
+            </tr>
+            <tr>
+                <th>Адрес</th>
+                <td>{{ client.address }}</td>
+            </tr>
+            <tr>
+                <th>Дата создания</th>
+                <td>{{ client.created_at }}</td>
+            </tr>
+        </table>
+    {% endfor %}
+{% endblock %}

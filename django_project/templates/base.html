@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block menu %}
+        <a href="/">Главная</a> | <a href="/clients/">Клиенты</a> | <a href="/products/">Товары</a> | <a href="/orders/">Заказы</a>
+    {% endblock %}
+    {% block content %}{% endblock %}
+</body>
+</html>
