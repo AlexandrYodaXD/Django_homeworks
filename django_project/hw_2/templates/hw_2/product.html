@@ -4,7 +4,18 @@
 
 {% block content %}
     <h1>Информация о продукте</h1>
+    {% if product.is_deleted %}
+        <h2>Продукт удален!</h2>
+    {% endif %}
     <table border="1">
+        <tr>
+            <th>Изображение продукта</th>
+            {% if product.image %}
+                <td><img src="{{ product.image.url }}" alt="{{ product.name }}" width="100"></td>
+            {% else %}
+                <td>Отсутствует</td>
+            {% endif %}
+        </tr>
         <tr>
             <th>ID</th>
             <td>{{ product.id }}</td>
@@ -30,4 +41,5 @@
             <td>{{ product.count }}</td>
         </tr>
     </table>
+    <a href="{% url 'edit_product' product.id %}">Редактировать</a>
 {% endblock %}

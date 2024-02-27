@@ -10,7 +10,10 @@
         <table border="1">
             <tr>
                 <th>Клиент</th>
-                <td><a href="{% url 'get_client_by_id' order.client.id %}">{{ order.client.name }}</a></td>
+                <td>
+                    <a href="{% url 'get_client_by_id' order.client.id %}">{{ order.client.name }}</a>
+                    {% if order.client.is_deleted %}(удален){% endif %}
+                </td>
             </tr>
             <tr>
                 <th>Товары</th>
@@ -25,8 +28,11 @@
 
                         {% for order_item in order.orderitem_set.all %}
                             <tr>
-                                <th><a href="{% url 'get_product_by_id' order_item.product.id %}">
-                                {{  order_item.product.name }}</a></th>
+                                <th>
+                                    <a href="{% url 'get_product_by_id' order_item.product.id %}">
+                                {{  order_item.product.name }}</a>
+                                    {% if order_item.product.is_deleted %}(удален){% endif %}
+                                </th>
                                 <th>{{ order_item.product.price }}$</th>
                                 <th>{{ order_item.quantity }}</th>
                             </tr>

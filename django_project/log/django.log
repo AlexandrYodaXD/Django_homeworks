@@ -3484,3 +3484,423 @@ INFO 2024-02-20 18:26:40,463 basehttp 23160 31328 "GET /orders/ HTTP/1.1" 200 48
 INFO 2024-02-20 18:27:53,569 autoreload 3276 9332 Watching for file changes with StatReloader
 INFO 2024-02-20 18:27:56,281 basehttp 3276 2156 "GET /orders/ HTTP/1.1" 200 49202
 INFO 2024-02-20 18:28:13,340 basehttp 3276 2156 "GET /products/ HTTP/1.1" 200 14196
+INFO 2024-02-27 15:28:37,967 autoreload 19424 19632 Watching for file changes with StatReloader
+INFO 2024-02-27 15:28:39,216 basehttp 19424 17936 "GET / HTTP/1.1" 200 537
+WARNING 2024-02-27 15:28:39,447 log 19424 17936 Not Found: /favicon.ico
+WARNING 2024-02-27 15:28:39,448 basehttp 19424 17936 "GET /favicon.ico HTTP/1.1" 404 3815
+INFO 2024-02-27 15:28:41,015 basehttp 19424 17936 "GET /clients/ HTTP/1.1" 200 7535
+INFO 2024-02-27 15:28:41,989 basehttp 19424 17936 "GET /products/ HTTP/1.1" 200 14152
+INFO 2024-02-27 15:28:42,581 basehttp 19424 17936 "GET /orders/ HTTP/1.1" 200 54063
+INFO 2024-02-27 15:39:49,074 autoreload 23412 19240 Watching for file changes with StatReloader
+INFO 2024-02-27 16:06:16,623 autoreload 7744 3784 Watching for file changes with StatReloader
+INFO 2024-02-27 16:06:17,944 basehttp 7744 8400 "GET / HTTP/1.1" 200 698
+INFO 2024-02-27 16:06:20,579 basehttp 7744 8400 "GET /clients/ HTTP/1.1" 200 7728
+INFO 2024-02-27 16:06:21,427 basehttp 7744 8400 "GET /client/1/ HTTP/1.1" 200 1336
+ERROR 2024-02-27 16:06:23,013 log 7744 8400 Internal Server Error: /client/1/edit
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 118, in edit_client_view
+    return render(request, 'edit_client.html', context={'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: edit_client.html
+ERROR 2024-02-27 16:06:23,014 basehttp 7744 8400 "GET /client/1/edit HTTP/1.1" 500 82345
+INFO 2024-02-27 16:07:56,811 autoreload 5800 22472 Watching for file changes with StatReloader
+INFO 2024-02-27 16:07:57,644 basehttp 5800 21724 "GET / HTTP/1.1" 200 698
+ERROR 2024-02-27 16:08:00,452 log 5800 21724 Internal Server Error: /client/1/edit
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'crispy_forms_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 118, in edit_client_view
+    return render(request, 'hw_2/edit_client.html', context={'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\defaulttags.py", line 1096, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\defaulttags.py", line 1036, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'crispy_forms_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+ERROR 2024-02-27 16:08:00,456 basehttp 5800 21724 "GET /client/1/edit HTTP/1.1" 500 161840
+INFO 2024-02-27 16:10:41,958 basehttp 5800 21724 "GET /client/1/edit HTTP/1.1" 200 1463
+ERROR 2024-02-27 16:10:54,080 log 5800 21724 Internal Server Error: /client/1/edit
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 106, in edit_client_view
+    return redirect('client_details', client_id=client.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_details' not found. 'client_details' is not a valid view function or pattern name.
+ERROR 2024-02-27 16:10:54,083 basehttp 5800 21724 "POST /client/1/edit HTTP/1.1" 500 87976
+INFO 2024-02-27 16:11:56,313 autoreload 5800 22472 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-27 16:11:56,806 autoreload 3720 5544 Watching for file changes with StatReloader
+INFO 2024-02-27 16:11:56,919 basehttp 3720 22344 "GET /client/1/edit HTTP/1.1" 200 1624
+INFO 2024-02-27 16:11:58,597 basehttp 3720 22344 "GET /client/1/edit HTTP/1.1" 200 1462
+ERROR 2024-02-27 16:12:02,259 log 3720 22344 Internal Server Error: /client/1/edit
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 106, in edit_client_view
+    return redirect('get_client_by_id_view', client_id=client.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_client_by_id_view' not found. 'get_client_by_id_view' is not a valid view function or pattern name.
+ERROR 2024-02-27 16:12:02,262 basehttp 3720 22344 "POST /client/1/edit HTTP/1.1" 500 88122
+INFO 2024-02-27 16:12:55,570 basehttp 3720 22344 "GET /client/1/edit HTTP/1.1" 200 1625
+ERROR 2024-02-27 16:12:56,911 log 3720 22344 Internal Server Error: /client/1/edit
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 106, in edit_client_view
+    return redirect('get_client_by_id_view', client_id=client.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'get_client_by_id_view' not found. 'get_client_by_id_view' is not a valid view function or pattern name.
+ERROR 2024-02-27 16:12:56,913 basehttp 3720 22344 "POST /client/1/edit HTTP/1.1" 500 88122
+INFO 2024-02-27 16:15:04,148 autoreload 3720 5544 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-27 16:15:04,613 autoreload 13708 11860 Watching for file changes with StatReloader
+INFO 2024-02-27 16:15:07,435 basehttp 13708 13432 "GET /client/1/edit HTTP/1.1" 200 1625
+INFO 2024-02-27 16:15:10,082 basehttp 13708 13432 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:15:10,103 basehttp 13708 13432 "GET /client/1/ HTTP/1.1" 200 1491
+INFO 2024-02-27 16:16:05,696 basehttp 13708 13432 "GET /client/1/edit HTTP/1.1" 200 1464
+INFO 2024-02-27 16:19:58,404 autoreload 13708 11860 C:\GeekBrains\Django_hw\django_project\hw_2\models.py changed, reloading.
+INFO 2024-02-27 16:19:58,869 autoreload 16768 17056 Watching for file changes with StatReloader
+INFO 2024-02-27 16:24:25,166 autoreload 16768 17056 C:\GeekBrains\Django_hw\django_project\hw_2\forms.py changed, reloading.
+INFO 2024-02-27 16:24:25,633 autoreload 4744 6420 Watching for file changes with StatReloader
+INFO 2024-02-27 16:24:54,905 autoreload 2488 14540 Watching for file changes with StatReloader
+INFO 2024-02-27 16:25:32,543 autoreload 348 23208 Watching for file changes with StatReloader
+INFO 2024-02-27 16:26:14,456 autoreload 20468 22860 Watching for file changes with StatReloader
+INFO 2024-02-27 16:41:53,010 autoreload 12960 23464 Watching for file changes with StatReloader
+ERROR 2024-02-27 16:41:56,853 log 12960 12112 Internal Server Error: /client/1/
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\django_project\hw_2\views.py", line 47, in get_client_by_id_view
+    return render(request, 'hw_2/client.html', context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\db\models\fields\files.py", line 66, in url
+    self._require_file()
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\db\models\fields\files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'avatar' attribute has no file associated with it.
+ERROR 2024-02-27 16:41:56,857 basehttp 12960 12112 "GET /client/1/ HTTP/1.1" 500 163949
+INFO 2024-02-27 16:45:17,538 autoreload 1748 18392 Watching for file changes with StatReloader
+INFO 2024-02-27 16:45:22,781 basehttp 1748 7888 "GET /client/1/edit HTTP/1.1" 200 1594
+INFO 2024-02-27 16:45:27,458 basehttp 1748 7888 "GET /client/1/edit HTTP/1.1" 200 1594
+INFO 2024-02-27 16:45:38,310 basehttp 1748 7888 "GET /clients/ HTTP/1.1" 200 7673
+INFO 2024-02-27 16:45:38,964 basehttp 1748 7888 "GET /client/1/ HTTP/1.1" 200 1329
+INFO 2024-02-27 16:45:49,564 basehttp 1748 7888 "GET /client/1/edit HTTP/1.1" 200 1594
+INFO 2024-02-27 16:45:58,623 basehttp 1748 7888 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:45:58,631 basehttp 1748 7888 "GET /client/1/ HTTP/1.1" 200 1490
+INFO 2024-02-27 16:46:01,101 basehttp 1748 7888 "GET /client/1/ HTTP/1.1" 200 1328
+INFO 2024-02-27 16:46:03,244 basehttp 1748 7888 "GET /client/1/ HTTP/1.1" 200 1328
+INFO 2024-02-27 16:46:45,687 basehttp 1748 7888 "GET /client/1/edit HTTP/1.1" 200 1593
+INFO 2024-02-27 16:47:06,098 basehttp 1748 7888 "GET /client/1/edit HTTP/1.1" 200 1593
+INFO 2024-02-27 16:48:16,841 basehttp 1748 7888 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:48:16,847 basehttp 1748 7888 "GET /client/1/ HTTP/1.1" 200 1490
+INFO 2024-02-27 16:50:17,396 autoreload 1748 18392 C:\GeekBrains\Django_hw\django_project\hw_2\views.py changed, reloading.
+INFO 2024-02-27 16:50:17,878 autoreload 3172 696 Watching for file changes with StatReloader
+INFO 2024-02-27 16:50:21,049 basehttp 3172 19712 "GET /client/1/edit HTTP/1.1" 200 1599
+INFO 2024-02-27 16:50:24,067 basehttp 3172 19712 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:50:24,089 basehttp 3172 19712 "GET /client/1/ HTTP/1.1" 200 1490
+INFO 2024-02-27 16:50:25,857 basehttp 3172 19712 "GET /client/1/ HTTP/1.1" 200 1328
+INFO 2024-02-27 16:50:26,711 basehttp 3172 19712 "GET /client/1/ HTTP/1.1" 200 1328
+INFO 2024-02-27 16:50:36,993 basehttp 3172 19712 "GET /client/1/edit HTTP/1.1" 200 1599
+INFO 2024-02-27 16:51:52,264 basehttp 3172 19712 "GET /client/1/edit HTTP/1.1" 200 1629
+INFO 2024-02-27 16:51:54,861 basehttp 3172 19712 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:51:54,869 basehttp 3172 19712 "GET /client/1/ HTTP/1.1" 200 1675
+WARNING 2024-02-27 16:51:54,909 log 3172 19712 Not Found: /media/avatars/43c300f79a53a2b021871d4f88ab99a9.jpg
+WARNING 2024-02-27 16:51:54,910 basehttp 3172 19712 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9.jpg HTTP/1.1" 404 4335
+INFO 2024-02-27 16:52:04,122 basehttp 3172 19712 "GET /client/1/edit HTTP/1.1" 200 1871
+INFO 2024-02-27 16:52:18,955 basehttp 3172 19712 "POST /client/1/edit HTTP/1.1" 200 2161
+INFO 2024-02-27 16:52:35,405 basehttp 3172 19712 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:52:35,411 basehttp 3172 19712 "GET /client/1/ HTTP/1.1" 200 1688
+WARNING 2024-02-27 16:52:35,445 log 3172 19712 Not Found: /media/avatars/174-1746568_donate-button-donate-button-heart.png
+WARNING 2024-02-27 16:52:35,446 basehttp 3172 19712 "GET /media/avatars/174-1746568_donate-button-donate-button-heart.png HTTP/1.1" 404 4374
+INFO 2024-02-27 16:56:09,365 autoreload 3172 696 C:\GeekBrains\Django_hw\django_project\django_project\settings.py changed, reloading.
+INFO 2024-02-27 16:56:09,840 autoreload 11168 5832 Watching for file changes with StatReloader
+INFO 2024-02-27 16:56:12,121 basehttp 11168 11036 "GET /client/1/edit HTTP/1.1" 200 1916
+INFO 2024-02-27 16:56:17,712 basehttp 11168 11036 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:56:17,732 basehttp 11168 11036 "GET /client/1/ HTTP/1.1" 200 1703
+WARNING 2024-02-27 16:56:17,762 log 11168 11036 Not Found: /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png
+WARNING 2024-02-27 16:56:17,763 basehttp 11168 11036 "GET /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png HTTP/1.1" 404 4419
+INFO 2024-02-27 16:57:37,391 autoreload 11168 5832 C:\GeekBrains\Django_hw\django_project\django_project\urls.py changed, reloading.
+INFO 2024-02-27 16:57:37,930 autoreload 7812 16180 Watching for file changes with StatReloader
+INFO 2024-02-27 16:57:41,312 autoreload 7812 16180 C:\GeekBrains\Django_hw\django_project\django_project\urls.py changed, reloading.
+INFO 2024-02-27 16:57:41,747 autoreload 23208 3808 Watching for file changes with StatReloader
+INFO 2024-02-27 16:57:44,140 basehttp 23208 11464 "GET /client/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 16:57:44,179 basehttp 23208 11464 "GET /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png HTTP/1.1" 200 60331
+INFO 2024-02-27 16:58:13,024 basehttp 23208 11464 "GET /clients/ HTTP/1.1" 200 7672
+INFO 2024-02-27 16:58:15,135 basehttp 23208 11464 "GET /client/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 16:58:15,160 basehttp 23208 11464 "GET /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png HTTP/1.1" 304 0
+INFO 2024-02-27 16:58:17,636 basehttp 23208 11464 "GET /clients/ HTTP/1.1" 200 7672
+INFO 2024-02-27 16:58:20,016 basehttp 23208 11464 "GET /client/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 16:59:12,496 basehttp 23208 11464 "GET /clients/ HTTP/1.1" 200 7672
+INFO 2024-02-27 16:59:13,692 basehttp 23208 11464 "GET /client/2/ HTTP/1.1" 200 1447
+INFO 2024-02-27 16:59:15,949 basehttp 23208 11464 "GET /client/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 16:59:15,980 basehttp 23208 11464 "GET /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png HTTP/1.1" 304 0
+INFO 2024-02-27 16:59:18,008 basehttp 23208 11464 "GET /client/4/ HTTP/1.1" 200 1474
+INFO 2024-02-27 16:59:20,833 basehttp 23208 11464 "GET /client/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 16:59:23,062 basehttp 23208 11464 "GET /client/2/ HTTP/1.1" 200 1447
+INFO 2024-02-27 16:59:23,941 basehttp 23208 11464 "GET /client/2/edit HTTP/1.1" 200 1654
+INFO 2024-02-27 16:59:26,869 basehttp 23208 11464 "POST /client/2/edit HTTP/1.1" 302 0
+INFO 2024-02-27 16:59:26,877 basehttp 23208 11464 "GET /client/2/ HTTP/1.1" 200 1688
+INFO 2024-02-27 16:59:26,908 basehttp 23208 11464 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_5CH2N2p.jpg HTTP/1.1" 200 101352
+INFO 2024-02-27 16:59:42,804 basehttp 23208 11464 "GET /client/2/ HTTP/1.1" 200 1526
+INFO 2024-02-27 16:59:42,816 basehttp 23208 11464 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_5CH2N2p.jpg HTTP/1.1" 304 0
+INFO 2024-02-27 17:00:43,580 basehttp 23208 11464 "GET /clients/ HTTP/1.1" 200 9320
+INFO 2024-02-27 17:00:43,610 basehttp 23208 11464 "GET /media/avatars/467-4671130_world-of-warcraft-horde-logo-png-transparent-png.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:00:43,615 basehttp 23208 11464 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_5CH2N2p.jpg HTTP/1.1" 304 0
+INFO 2024-02-27 17:11:22,285 autoreload 23512 19432 Watching for file changes with StatReloader
+INFO 2024-02-27 17:11:24,805 basehttp 23512 9396 "GET /products/ HTTP/1.1" 200 17582
+INFO 2024-02-27 17:11:26,737 basehttp 23512 9396 "GET /product/1/ HTTP/1.1" 200 1313
+INFO 2024-02-27 17:12:02,086 basehttp 23512 9396 "GET /products/ HTTP/1.1" 200 17582
+INFO 2024-02-27 17:12:03,317 basehttp 23512 9396 "GET /product/1/ HTTP/1.1" 200 1374
+INFO 2024-02-27 17:12:04,904 basehttp 23512 9396 "GET /product/1/edit HTTP/1.1" 200 1607
+INFO 2024-02-27 17:12:18,578 basehttp 23512 9396 "POST /product/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 17:12:18,585 basehttp 23512 9396 "GET /product/1/ HTTP/1.1" 200 1610
+INFO 2024-02-27 17:12:18,657 basehttp 23512 9396 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 200 551982
+INFO 2024-02-27 17:12:20,695 basehttp 23512 9396 "GET /products/ HTTP/1.1" 200 17656
+INFO 2024-02-27 17:12:20,729 basehttp 23512 9396 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:12:25,275 basehttp 23512 9396 "GET /product/1/ HTTP/1.1" 200 1448
+INFO 2024-02-27 17:12:25,304 basehttp 23512 9396 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:12:28,290 basehttp 23512 9396 "GET /product/1/edit HTTP/1.1" 200 1858
+INFO 2024-02-27 17:13:04,125 autoreload 23512 19432 C:\GeekBrains\Django_hw\django_project\hw_2\forms.py changed, reloading.
+INFO 2024-02-27 17:13:04,631 autoreload 15148 3788 Watching for file changes with StatReloader
+INFO 2024-02-27 17:13:06,465 basehttp 15148 4052 "GET /product/1/edit HTTP/1.1" 200 2001
+INFO 2024-02-27 17:13:24,181 basehttp 15148 4052 "POST /product/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 17:13:24,203 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1610
+INFO 2024-02-27 17:13:24,232 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:13:27,770 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1448
+INFO 2024-02-27 17:13:29,075 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1448
+INFO 2024-02-27 17:13:31,604 basehttp 15148 4052 "GET /products/ HTTP/1.1" 200 17656
+INFO 2024-02-27 17:13:31,629 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:13:39,880 basehttp 15148 4052 "GET /product/1/edit HTTP/1.1" 200 2009
+INFO 2024-02-27 17:14:43,372 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 17:14:43,385 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:14:44,976 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 17:15:14,763 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1541
+INFO 2024-02-27 17:15:14,776 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:15:45,004 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1503
+INFO 2024-02-27 17:15:45,016 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:16:56,474 basehttp 15148 4052 "GET /products/ HTTP/1.1" 200 17656
+INFO 2024-02-27 17:16:56,511 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:17:32,151 basehttp 15148 4052 "GET /products/ HTTP/1.1" 200 17021
+INFO 2024-02-27 17:17:39,208 basehttp 15148 4052 "GET /product/2/ HTTP/1.1" 200 1386
+INFO 2024-02-27 17:17:42,408 basehttp 15148 4052 "GET /product/2/ HTTP/1.1" 200 1386
+INFO 2024-02-27 17:17:44,854 basehttp 15148 4052 "GET /product/3/ HTTP/1.1" 200 1389
+INFO 2024-02-27 17:17:46,305 basehttp 15148 4052 "GET /product/2/ HTTP/1.1" 200 1386
+INFO 2024-02-27 17:17:48,998 basehttp 15148 4052 "GET /product/1/ HTTP/1.1" 200 1504
+INFO 2024-02-27 17:17:49,026 basehttp 15148 4052 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:18:17,725 autoreload 15148 3788 C:\GeekBrains\Django_hw\django_project\hw_2\forms.py changed, reloading.
+INFO 2024-02-27 17:18:18,188 autoreload 23368 14668 Watching for file changes with StatReloader
+INFO 2024-02-27 17:18:19,514 autoreload 23368 14668 C:\GeekBrains\Django_hw\django_project\hw_2\forms.py changed, reloading.
+INFO 2024-02-27 17:18:20,023 autoreload 10744 4872 Watching for file changes with StatReloader
+INFO 2024-02-27 17:18:21,238 basehttp 10744 15764 "GET /clients/ HTTP/1.1" 200 9252
+INFO 2024-02-27 17:18:25,242 basehttp 10744 15764 "GET /client/4/ HTTP/1.1" 200 1469
+INFO 2024-02-27 17:18:30,844 basehttp 10744 15764 "GET /client/4/edit HTTP/1.1" 200 1813
+INFO 2024-02-27 17:18:32,522 basehttp 10744 15764 "POST /client/4/edit HTTP/1.1" 302 0
+INFO 2024-02-27 17:18:32,528 basehttp 10744 15764 "GET /client/4/ HTTP/1.1" 200 1679
+INFO 2024-02-27 17:18:41,647 basehttp 10744 15764 "GET /clients/ HTTP/1.1" 200 8375
+INFO 2024-02-27 17:18:47,029 basehttp 10744 15764 "GET /client/4/statistics/ HTTP/1.1" 200 4866
+INFO 2024-02-27 17:18:55,630 basehttp 10744 15764 "GET /orders/ HTTP/1.1" 200 51426
+INFO 2024-02-27 17:20:10,571 basehttp 10744 15764 "GET /orders/ HTTP/1.1" 200 52020
+INFO 2024-02-27 17:20:30,937 basehttp 10744 15764 "GET /orders/ HTTP/1.1" 200 53280
+INFO 2024-02-27 17:21:12,833 basehttp 10744 15764 "GET /orders/ HTTP/1.1" 200 62096
+INFO 2024-02-27 17:21:23,107 basehttp 10744 15764 "GET /product/1/ HTTP/1.1" 200 1504
+INFO 2024-02-27 17:21:23,143 basehttp 10744 15764 "GET /media/products/5a22a64be199e2.9722702315122202359241.png HTTP/1.1" 304 0
+INFO 2024-02-27 17:21:36,747 basehttp 10744 15764 "GET /products/ HTTP/1.1" 200 17021
+INFO 2024-02-27 17:21:50,551 basehttp 10744 15764 "GET /orders/ HTTP/1.1" 200 62096
+INFO 2024-02-27 17:21:58,910 basehttp 10744 15764 "GET /client/3/ HTTP/1.1" 200 1461
+INFO 2024-02-27 17:22:00,631 basehttp 10744 15764 "GET /clients/ HTTP/1.1" 200 8375
+INFO 2024-02-27 17:22:04,259 basehttp 10744 15764 "GET /client/1/ HTTP/1.1" 200 1458
+INFO 2024-02-27 17:22:07,027 basehttp 10744 15764 "GET /client/1/edit HTTP/1.1" 200 1802
+INFO 2024-02-27 17:22:10,319 basehttp 10744 15764 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-27 17:22:10,326 basehttp 10744 15764 "GET /client/1/ HTTP/1.1" 200 1698
+INFO 2024-02-27 17:22:10,387 basehttp 10744 15764 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_v1YnjR6.jpg HTTP/1.1" 200 101352
+INFO 2024-02-27 17:22:13,247 basehttp 10744 15764 "GET /clients/ HTTP/1.1" 200 8453
+INFO 2024-02-27 17:22:13,271 basehttp 10744 15764 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_v1YnjR6.jpg HTTP/1.1" 304 0

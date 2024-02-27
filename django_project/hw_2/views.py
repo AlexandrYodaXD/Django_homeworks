@@ -1,8 +1,12 @@
 from datetime import timedelta
+
+from django.core.files.storage import FileSystemStorage
 from django.utils import timezone
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.db.models import Sum
+from django.contrib import messages
 from hw_2.models import Client, Product, Order, OrderItem
+from hw_2.forms import ClientEditForm, ProductEditForm
 
 
 def index_view(request):
@@ -73,3 +77,69 @@ def get_product_statistics(client, start_date, end_date):
     order_items = OrderItem.objects.filter(order__in=orders)
     product_statistics = order_items.values('product__name', 'product__id').annotate(total_quantity=Sum('quantity'))
     return product_statistics
+
+
+# def upload_image_view(request):
+#     if request.method == 'POST':
+#         form = ImageForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             image = form.cleaned_data['image']
+#             fs = FileSystemStorage()
+#             fs.save(image.name, image)
+#     else:
+#         form = ImageForm()
+#     return render(request, 'hw_2/upload_image.html', {'form': form})
+
+
+def edit_client_view(request, client_id):
+    client = get_object_or_404(Client, id=client_id)
+    if request.method == 'POST':
+        # Создаем форму на основе данных клиента и данных, отправленных пользователем
+        form = ClientEditForm(request.POST, request.FILES, instance=client)
+        # Проверяем, валидна ли форма
+        if form.is_valid():
+            # Если форма валидна, сохраняем изменения
+            form.save()
+            # Добавляем сообщение об успешном изменении данных
+            messages.success(request, 'Данные успешно изменены!')
+            # Перенаправляем пользователя на страницу с деталями клиента
+            return redirect('get_client_by_id', client_id=client.id)
+        else:
+            # Если форма не валидна, показываем ошибки
+            messages.error(request, 'Форма заполнена неверно!')
+            # Отображаем шаблон с формой для редактирования клиента
+            return render(request, 'hw_2/edit_page.html', context={'form': form})
+    else:
+        # Если запрос был отправлен методом GET (обычное отображение страницы)
+        # Создаем форму на основе данных клиента
+        form = ClientEditForm(instance=client)
+
+        # Отображаем шаблон с формой для редактирования клиента
+    return render(request, 'hw_2/edit_page.html', context={'form': form})
+
+
+def edit_product_view(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    if request.method == 'POST':
+        # Создаем форму на основе данных продукта и данных, отправленных пользователем
+        form = ProductEditForm(request.POST, request.FILES, instance=product)
+        # Проверяем, валидна ли форма
+        if form.is_valid():
+            # Если форма валидна, сохраняем изменения
+            form.save()
+            # Добавляем сообщение об успешном изменении данных
+            messages.success(request, 'Данные успешно изменены!')
+            # Перенаправляем пользователя на страницу с деталями клиента
+            return redirect('get_product_by_id', product_id=product.id)
+        else:
+            # Если форма не валидна, показываем ошибки
+            messages.error(request, 'Форма заполнена неверно!')
+            # Отображаем шаблон с формой для редактирования клиента
+            return render(request, 'hw_2/edit_page.html', context={'form': form})
+    else:
+        # Если запрос был отправлен методом GET (обычное отображение страницы)
+        # Создаем форму на основе данных клиента
+        form = ProductEditForm(instance=product)
+
+        # Отображаем шаблон с формой для редактирования клиента
+    return render(request, 'hw_2/edit_page.html', context={'form': form})

@@ -5,8 +5,17 @@
 {% block content %}
     <h1>Клиенты</h1>
     {% for client in clients %}
+    {% if not client.is_deleted %}
         <h2><a href="{% url 'get_client_by_id' client.id %}">Клиент #{{ client.id }}</a></h2>
         <table border="1">
+            <tr>
+                <th>Аватар</th>
+            {% if client.avatar %}
+                <td><img src="{{ client.avatar.url }}" alt="{{ client.name }}" width="100"></td>
+            {% else %}
+                <td>Отсутствует</td>
+            {% endif %}
+            </tr>
             <tr>
                 <th>Имя</th>
                 <td>{{ client.name }}</td>
@@ -28,5 +37,6 @@
                 <td>{{ client.created_at }}</td>
             </tr>
         </table>
+    {% endif %}
     {% endfor %}
 {% endblock %}
