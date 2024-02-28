@@ -3904,3 +3904,661 @@ INFO 2024-02-27 17:22:10,326 basehttp 10744 15764 "GET /client/1/ HTTP/1.1" 200 
 INFO 2024-02-27 17:22:10,387 basehttp 10744 15764 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_v1YnjR6.jpg HTTP/1.1" 200 101352
 INFO 2024-02-27 17:22:13,247 basehttp 10744 15764 "GET /clients/ HTTP/1.1" 200 8453
 INFO 2024-02-27 17:22:13,271 basehttp 10744 15764 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_v1YnjR6.jpg HTTP/1.1" 304 0
+INFO 2024-02-27 17:46:05,594 basehttp 10744 16712 "GET /admin HTTP/1.1" 301 0
+INFO 2024-02-27 17:46:05,601 basehttp 10744 22116 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-02-27 17:46:05,647 basehttp 10744 22116 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-02-27 17:46:05,682 basehttp 10744 22116 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-02-27 17:46:05,686 basehttp 10744 16744 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-02-27 17:46:05,686 basehttp 10744 16068 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-02-27 17:46:05,686 basehttp 10744 3612 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-02-27 17:46:05,687 basehttp 10744 23516 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-02-27 17:46:05,693 basehttp 10744 4008 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-02-27 17:46:05,698 basehttp 10744 22116 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-02-27 17:46:20,576 basehttp 10744 22116 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4319
+INFO 2024-02-27 17:48:12,339 autoreload 10744 4872 C:\GeekBrains\Django_hw\django_project\django_project\settings.py changed, reloading.
+INFO 2024-02-27 17:48:12,880 autoreload 6880 15492 Watching for file changes with StatReloader
+INFO 2024-02-27 17:48:17,530 basehttp 6880 2240 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-02-27 17:48:30,271 basehttp 6880 2240 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4631
+INFO 2024-02-27 17:51:33,129 autoreload 4688 6852 Watching for file changes with StatReloader
+INFO 2024-02-27 17:51:37,105 basehttp 4688 6816 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4631
+INFO 2024-02-27 17:51:42,686 basehttp 4688 6816 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-02-27 17:51:55,170 basehttp 4688 6816 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-02-27 17:52:43,738 autoreload 23436 22980 Watching for file changes with StatReloader
+INFO 2024-02-27 17:52:47,143 basehttp 23436 23204 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-02-27 17:52:55,351 basehttp 23436 23204 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO 2024-02-27 17:53:36,310 autoreload 6112 6420 Watching for file changes with StatReloader
+INFO 2024-02-27 17:53:45,350 basehttp 6112 5068 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-02-27 17:53:45,397 basehttp 6112 5068 "GET /admin/ HTTP/1.1" 200 5944
+INFO 2024-02-27 17:53:45,451 basehttp 6112 5068 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-02-27 17:53:45,460 basehttp 6112 5068 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-02-27 17:53:45,461 basehttp 6112 12944 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-02-27 17:54:01,551 basehttp 6112 12944 "GET /admin/auth/user/ HTTP/1.1" 200 11916
+INFO 2024-02-27 17:54:01,584 basehttp 6112 12944 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-02-27 17:54:01,598 basehttp 6112 22116 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-02-27 17:54:01,604 basehttp 6112 22896 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-02-27 17:54:01,605 basehttp 6112 2412 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-02-27 17:54:01,606 basehttp 6112 12944 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-02-27 17:54:01,608 basehttp 6112 5068 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-27 17:54:01,618 basehttp 6112 22116 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-02-27 17:54:01,621 basehttp 6112 12944 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-02-27 17:54:01,625 basehttp 6112 5068 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-02-27 17:54:01,625 basehttp 6112 22896 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-02-27 17:54:01,641 basehttp 6112 6964 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-02-27 17:54:01,660 basehttp 6112 6964 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-02-27 17:54:01,684 basehttp 6112 2412 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-02-27 17:54:01,710 basehttp 6112 2412 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-02-27 17:54:01,710 basehttp 6112 6964 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-02-27 17:54:01,710 basehttp 6112 22896 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-02-27 17:54:13,650 basehttp 6112 6964 "GET /admin/auth/group/ HTTP/1.1" 200 7783
+INFO 2024-02-27 17:54:13,682 basehttp 6112 6964 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-27 17:54:18,847 basehttp 6112 6964 "GET /admin/ HTTP/1.1" 200 5944
+INFO 2024-02-27 17:54:19,990 basehttp 6112 6964 "GET /admin/auth/group/ HTTP/1.1" 200 7783
+INFO 2024-02-28 14:21:37,316 autoreload 21124 28788 Watching for file changes with StatReloader
+INFO 2024-02-28 14:21:39,709 basehttp 21124 28864 "GET / HTTP/1.1" 200 698
+INFO 2024-02-28 14:22:15,663 basehttp 21124 28864 "GET / HTTP/1.1" 200 698
+INFO 2024-02-28 14:22:20,350 basehttp 21124 28864 "GET /admin HTTP/1.1" 301 0
+INFO 2024-02-28 14:22:20,391 basehttp 21124 23460 "GET /admin/ HTTP/1.1" 200 7486
+INFO 2024-02-28 14:22:20,534 basehttp 21124 23460 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-02-28 14:22:20,537 basehttp 21124 26120 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-02-28 14:22:20,538 basehttp 21124 29160 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-02-28 14:22:20,541 basehttp 21124 29148 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-02-28 14:22:20,542 basehttp 21124 29600 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-02-28 14:22:20,543 basehttp 21124 16612 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-02-28 14:22:20,547 basehttp 21124 29600 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-02-28 14:22:20,547 basehttp 21124 16612 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-02-28 14:22:49,818 basehttp 21124 16612 "GET /admin/hw_2/client/ HTTP/1.1" 200 13158
+INFO 2024-02-28 14:22:49,856 basehttp 21124 29160 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-02-28 14:22:49,856 basehttp 21124 16612 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-02-28 14:22:49,857 basehttp 21124 23460 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-02-28 14:22:49,857 basehttp 21124 26120 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-02-28 14:22:49,857 basehttp 21124 29148 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-02-28 14:22:49,862 basehttp 21124 16612 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-02-28 14:22:49,864 basehttp 21124 29160 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-02-28 14:22:49,869 basehttp 21124 23460 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:22:49,869 basehttp 21124 29600 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-02-28 14:22:49,871 basehttp 21124 26120 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-02-28 14:22:49,875 basehttp 21124 26120 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-02-28 14:22:49,898 basehttp 21124 26120 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-02-28 14:22:52,053 basehttp 21124 26120 "GET /admin/hw_2/client/10/change/ HTTP/1.1" 200 12736
+INFO 2024-02-28 14:22:52,086 basehttp 21124 23460 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:22:52,086 basehttp 21124 26120 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-02-28 14:22:52,095 basehttp 21124 29600 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-02-28 14:22:52,099 basehttp 21124 23460 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-02-28 14:22:52,103 basehttp 21124 26120 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-02-28 14:22:53,626 basehttp 21124 26120 "GET /admin/hw_2/client/ HTTP/1.1" 200 13158
+INFO 2024-02-28 14:23:29,310 autoreload 21124 28788 C:\GeekBrains\Django_hw\django_project\hw_2\models.py changed, reloading.
+INFO 2024-02-28 14:23:29,860 autoreload 23520 18224 Watching for file changes with StatReloader
+INFO 2024-02-28 14:23:32,882 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:23:32,898 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:43,895 basehttp 23520 17588 "GET /admin/hw_2/client/10/change/ HTTP/1.1" 200 12715
+INFO 2024-02-28 14:23:43,931 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:53,416 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:23:54,529 basehttp 23520 17588 "GET /admin/hw_2/client/9/change/ HTTP/1.1" 200 12733
+INFO 2024-02-28 14:23:54,557 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:55,187 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:23:56,000 basehttp 23520 17588 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 12728
+INFO 2024-02-28 14:23:56,026 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:56,794 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:23:57,472 basehttp 23520 17588 "GET /admin/hw_2/client/7/change/ HTTP/1.1" 200 12736
+INFO 2024-02-28 14:23:57,496 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:58,057 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:23:58,690 basehttp 23520 17588 "GET /admin/hw_2/client/6/change/ HTTP/1.1" 200 12694
+INFO 2024-02-28 14:23:58,723 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:23:59,266 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:00,081 basehttp 23520 17588 "GET /admin/hw_2/client/5/change/ HTTP/1.1" 200 12727
+INFO 2024-02-28 14:24:00,106 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:00,615 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:01,172 basehttp 23520 17588 "GET /admin/hw_2/client/4/change/ HTTP/1.1" 200 12712
+INFO 2024-02-28 14:24:01,199 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:01,747 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:02,398 basehttp 23520 17588 "GET /admin/hw_2/client/3/change/ HTTP/1.1" 200 12744
+INFO 2024-02-28 14:24:02,424 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:02,900 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:03,426 basehttp 23520 17588 "GET /admin/hw_2/client/2/change/ HTTP/1.1" 200 12727
+INFO 2024-02-28 14:24:03,458 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:03,877 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:04,300 basehttp 23520 17588 "GET /admin/hw_2/client/1/change/ HTTP/1.1" 200 12741
+INFO 2024-02-28 14:24:04,325 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:04,804 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:11,150 basehttp 23520 17588 "GET / HTTP/1.1" 200 698
+INFO 2024-02-28 14:24:12,712 basehttp 23520 17588 "GET /clients/ HTTP/1.1" 200 9350
+INFO 2024-02-28 14:24:15,189 basehttp 23520 17588 "GET /client/1/ HTTP/1.1" 200 1478
+INFO 2024-02-28 14:24:16,377 basehttp 23520 17588 "GET /client/1/edit HTTP/1.1" 200 1814
+INFO 2024-02-28 14:24:19,807 basehttp 23520 17588 "POST /client/1/edit HTTP/1.1" 302 0
+INFO 2024-02-28 14:24:19,813 basehttp 23520 17588 "GET /client/1/ HTTP/1.1" 200 1722
+INFO 2024-02-28 14:24:19,871 basehttp 23520 17588 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_UNxrx9X.jpg HTTP/1.1" 200 101352
+INFO 2024-02-28 14:24:22,400 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:22,416 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:23,719 basehttp 23520 17588 "GET /admin/hw_2/client/10/change/ HTTP/1.1" 200 12715
+INFO 2024-02-28 14:24:23,753 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:24,843 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:27,672 basehttp 23520 17588 "GET /admin/hw_2/client/1/change/ HTTP/1.1" 200 13142
+INFO 2024-02-28 14:24:27,698 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:30,282 basehttp 23520 17588 "GET /media/avatars/43c300f79a53a2b021871d4f88ab99a9_UNxrx9X.jpg HTTP/1.1" 304 0
+INFO 2024-02-28 14:24:31,160 basehttp 23520 17588 "GET /admin/hw_2/client/1/change/ HTTP/1.1" 200 13142
+INFO 2024-02-28 14:24:33,948 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:24:38,501 basehttp 23520 17588 "GET /admin/hw_2/client/10/change/ HTTP/1.1" 200 12715
+INFO 2024-02-28 14:24:38,528 basehttp 23520 17588 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:24:48,254 basehttp 23520 17588 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:25:46,674 autoreload 23520 18224 C:\GeekBrains\Django_hw\django_project\hw_2\models.py changed, reloading.
+INFO 2024-02-28 14:25:47,289 autoreload 26448 29476 Watching for file changes with StatReloader
+INFO 2024-02-28 14:25:50,185 basehttp 26448 18708 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:25:50,218 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:25:51,243 basehttp 26448 18708 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 14:25:51,275 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:25:54,744 basehttp 26448 18708 "GET /admin/hw_2/product/20/change/ HTTP/1.1" 200 12693
+INFO 2024-02-28 14:25:54,775 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:25:58,925 basehttp 26448 18708 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 14:26:00,722 basehttp 26448 18708 "GET /admin/hw_2/order/ HTTP/1.1" 200 20039
+INFO 2024-02-28 14:26:00,755 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:01,591 basehttp 26448 18708 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12339
+INFO 2024-02-28 14:26:01,623 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:01,657 basehttp 26448 18708 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-02-28 14:26:09,481 basehttp 26448 18708 "GET /admin/hw_2/client/2/change/?_to_field=id HTTP/1.1" 200 12776
+INFO 2024-02-28 14:26:09,516 basehttp 26448 18708 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:11,020 basehttp 26448 18708 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12339
+INFO 2024-02-28 14:26:33,725 autoreload 26448 29476 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 14:26:34,205 autoreload 28188 28184 Watching for file changes with StatReloader
+INFO 2024-02-28 14:26:36,560 basehttp 28188 27024 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12651
+INFO 2024-02-28 14:26:36,581 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:37,435 basehttp 28188 27024 "GET /admin/hw_2/orderitem/ HTTP/1.1" 200 39728
+INFO 2024-02-28 14:26:37,466 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:38,728 basehttp 28188 27024 "GET /admin/hw_2/orderitem/83/change/ HTTP/1.1" 200 15792
+INFO 2024-02-28 14:26:38,761 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:50,554 basehttp 28188 27024 "GET /admin/hw_2/orderitem/ HTTP/1.1" 200 39728
+INFO 2024-02-28 14:26:51,948 basehttp 28188 27024 "GET /admin/hw_2/order/ HTTP/1.1" 200 20351
+INFO 2024-02-28 14:26:51,976 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:52,771 basehttp 28188 27024 "GET /admin/hw_2/orderitem/ HTTP/1.1" 200 39728
+INFO 2024-02-28 14:26:53,531 basehttp 28188 27024 "GET /admin/hw_2/orderitem/ HTTP/1.1" 200 39728
+INFO 2024-02-28 14:26:53,548 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:55,026 basehttp 28188 27024 "GET /admin/hw_2/order/ HTTP/1.1" 200 20351
+INFO 2024-02-28 14:26:55,057 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:26:56,078 basehttp 28188 27024 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12651
+INFO 2024-02-28 14:26:56,107 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:17,786 basehttp 28188 27024 "GET /admin/hw_2/client/ HTTP/1.1" 200 13394
+INFO 2024-02-28 14:27:17,819 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:20,380 basehttp 28188 27024 "GET /admin/hw_2/orderitem/ HTTP/1.1" 200 39728
+INFO 2024-02-28 14:27:20,406 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:23,579 basehttp 28188 27024 "GET /admin/hw_2/product/ HTTP/1.1" 200 16729
+INFO 2024-02-28 14:27:23,607 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:27,657 basehttp 28188 27024 "GET /admin/hw_2/order/ HTTP/1.1" 200 20351
+INFO 2024-02-28 14:27:27,688 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:36,773 basehttp 28188 27024 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12651
+INFO 2024-02-28 14:27:36,809 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:27:51,535 basehttp 28188 27024 "GET /admin/hw_2/order/30/history/ HTTP/1.1" 200 7842
+INFO 2024-02-28 14:27:52,817 basehttp 28188 27024 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12651
+INFO 2024-02-28 14:28:47,145 basehttp 28188 27024 "GET /admin/hw_2/client/ HTTP/1.1" 200 13394
+INFO 2024-02-28 14:28:47,180 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:28:48,049 basehttp 28188 27024 "GET /admin/hw_2/client/10/change/ HTTP/1.1" 200 13027
+INFO 2024-02-28 14:28:48,083 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:28:54,451 basehttp 28188 27024 "GET /admin/hw_2/client/ HTTP/1.1" 200 13394
+INFO 2024-02-28 14:28:58,073 basehttp 28188 27024 "GET /admin/hw_2/product/ HTTP/1.1" 200 16729
+INFO 2024-02-28 14:28:58,101 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:29:07,332 basehttp 28188 27024 "GET /admin/hw_2/product/19/change/ HTTP/1.1" 200 12963
+INFO 2024-02-28 14:29:07,363 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:29:10,250 basehttp 28188 27024 "GET /admin/hw_2/product/ HTTP/1.1" 200 16729
+INFO 2024-02-28 14:29:21,256 basehttp 28188 27024 "GET /admin/hw_2/order/ HTTP/1.1" 200 20351
+INFO 2024-02-28 14:29:21,286 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:29:22,763 basehttp 28188 27024 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 12651
+INFO 2024-02-28 14:29:22,797 basehttp 28188 27024 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:29:50,989 basehttp 28188 27024 "GET /admin/hw_2/order/ HTTP/1.1" 200 20351
+INFO 2024-02-28 14:31:11,585 autoreload 28188 28184 C:\GeekBrains\Django_hw\django_project\hw_2\models.py changed, reloading.
+INFO 2024-02-28 14:31:12,130 autoreload 27372 29460 Watching for file changes with StatReloader
+INFO 2024-02-28 14:31:14,918 basehttp 27372 19108 "GET /admin/hw_2/order/ HTTP/1.1" 200 22061
+INFO 2024-02-28 14:31:14,939 basehttp 27372 19108 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:31:22,806 basehttp 27372 19108 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 12728
+INFO 2024-02-28 14:31:22,836 basehttp 27372 19108 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:31:24,463 basehttp 27372 19108 "GET /admin/hw_2/order/ HTTP/1.1" 200 22061
+INFO 2024-02-28 14:33:45,917 autoreload 27372 29460 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 14:33:46,436 autoreload 26072 29652 Watching for file changes with StatReloader
+INFO 2024-02-28 14:33:47,750 basehttp 26072 13776 "GET /admin/hw_2/order/ HTTP/1.1" 200 22061
+INFO 2024-02-28 14:33:47,773 basehttp 26072 13776 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:33:49,418 basehttp 26072 13776 "GET /admin/hw_2/order/ HTTP/1.1" 200 22061
+INFO 2024-02-28 14:33:49,435 basehttp 26072 13776 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:33:50,451 basehttp 26072 13776 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 26999
+INFO 2024-02-28 14:33:50,484 basehttp 26072 13776 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:33:50,521 basehttp 26072 27356 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+INFO 2024-02-28 14:36:16,126 autoreload 26072 29652 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 14:36:16,594 autoreload 28956 17960 Watching for file changes with StatReloader
+INFO 2024-02-28 14:46:46,724 autoreload 28956 17960 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 14:46:47,216 autoreload 8960 27596 Watching for file changes with StatReloader
+INFO 2024-02-28 14:46:51,222 basehttp 8960 21764 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 29722
+INFO 2024-02-28 14:46:51,244 basehttp 8960 21764 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:46:51,304 basehttp 8960 21764 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+INFO 2024-02-28 14:47:10,121 autoreload 8960 27596 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 14:47:10,650 autoreload 28320 20776 Watching for file changes with StatReloader
+INFO 2024-02-28 14:47:12,916 basehttp 28320 15632 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 26687
+INFO 2024-02-28 14:47:12,937 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:47:39,709 basehttp 28320 15632 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:47:39,743 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:47:41,308 basehttp 28320 15632 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 14:47:41,337 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:47:44,764 basehttp 28320 15632 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:47:44,792 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:47:50,833 basehttp 28320 15632 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 14:47:50,866 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:47:53,883 basehttp 28320 15632 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 14:47:53,916 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:48:54,869 basehttp 28320 15632 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:48:54,906 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:48:56,081 basehttp 28320 15632 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 14:48:56,109 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:48:57,610 basehttp 28320 15632 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 26687
+INFO 2024-02-28 14:48:57,641 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:49:12,351 basehttp 28320 15632 "GET /admin/hw_2/client/2/change/?_to_field=id HTTP/1.1" 200 12776
+INFO 2024-02-28 14:49:12,384 basehttp 28320 15632 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:49:13,960 basehttp 28320 15632 "GET /admin/hw_2/order/30/change/ HTTP/1.1" 200 26687
+INFO 2024-02-28 14:56:35,816 basehttp 28320 3496 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:56:35,855 basehttp 28320 3496 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:56:37,625 basehttp 28320 3496 "GET /admin/hw_2/client/add/ HTTP/1.1" 200 12375
+INFO 2024-02-28 14:56:37,660 basehttp 28320 3496 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 14:56:42,069 basehttp 28320 3496 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:56:47,464 basehttp 28320 3496 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 14:56:47,481 basehttp 28320 3496 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:00,765 basehttp 28320 28312 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 15:04:00,796 basehttp 28320 28312 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:28,812 autoreload 28320 20776 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:04:29,371 autoreload 29400 25944 Watching for file changes with StatReloader
+INFO 2024-02-28 15:04:30,760 basehttp 29400 9228 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 15:04:30,778 basehttp 29400 9228 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:32,032 basehttp 29400 9228 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 15:04:32,047 basehttp 29400 9228 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:34,629 basehttp 29400 9228 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 15:04:34,659 basehttp 29400 9228 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:36,108 basehttp 29400 9228 "GET /admin/hw_2/order/ HTTP/1.1" 200 21749
+INFO 2024-02-28 15:04:36,138 basehttp 29400 9228 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:04:54,438 autoreload 29400 25944 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:04:55,050 autoreload 27972 19640 Watching for file changes with StatReloader
+INFO 2024-02-28 15:05:12,683 autoreload 27972 19640 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:05:13,182 autoreload 26780 23032 Watching for file changes with StatReloader
+INFO 2024-02-28 15:05:15,533 basehttp 26780 27932 "GET /admin/hw_2/order/ HTTP/1.1" 200 22411
+INFO 2024-02-28 15:05:15,567 basehttp 26780 27932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:05:18,948 basehttp 26780 27932 "GET /admin/hw_2/order/ HTTP/1.1" 200 22411
+INFO 2024-02-28 15:05:18,963 basehttp 26780 27932 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:05:43,291 autoreload 26780 23032 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:05:43,845 autoreload 25712 26292 Watching for file changes with StatReloader
+INFO 2024-02-28 15:05:46,412 basehttp 25712 28868 "GET /admin/hw_2/order/ HTTP/1.1" 200 25662
+INFO 2024-02-28 15:05:46,430 basehttp 25712 28868 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:06:54,823 autoreload 25712 26292 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:06:55,401 autoreload 8124 29372 Watching for file changes with StatReloader
+INFO 2024-02-28 15:07:24,314 autoreload 8124 29372 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:07:24,813 autoreload 14564 25812 Watching for file changes with StatReloader
+INFO 2024-02-28 15:07:26,781 basehttp 14564 15168 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 15:07:26,811 basehttp 14564 15168 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:07:27,919 basehttp 14564 15168 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 15:07:27,938 basehttp 14564 15168 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:07:28,600 basehttp 14564 15168 "GET /admin/hw_2/client/ HTTP/1.1" 200 13082
+INFO 2024-02-28 15:07:28,618 basehttp 14564 15168 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:07:34,486 autoreload 14564 25812 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:07:35,067 autoreload 1852 22020 Watching for file changes with StatReloader
+INFO 2024-02-28 15:07:37,046 basehttp 1852 28020 "GET /admin/hw_2/client/ HTTP/1.1" 200 17956
+INFO 2024-02-28 15:07:37,064 basehttp 1852 28020 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:07:37,092 basehttp 1852 15984 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-02-28 15:08:07,221 autoreload 1852 22020 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:08:07,714 autoreload 10592 28908 Watching for file changes with StatReloader
+INFO 2024-02-28 15:08:14,159 basehttp 10592 5896 "GET /admin/hw_2/client/ HTTP/1.1" 200 18974
+INFO 2024-02-28 15:08:14,179 basehttp 10592 5896 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:14,205 basehttp 10592 24512 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-02-28 15:08:17,662 basehttp 10592 24512 "GET /admin/hw_2/client/?o=1 HTTP/1.1" 200 19661
+INFO 2024-02-28 15:08:17,693 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:17,710 basehttp 10592 24512 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-02-28 15:08:24,301 basehttp 10592 24512 "GET /admin/hw_2/client/?o=6.1 HTTP/1.1" 200 20187
+INFO 2024-02-28 15:08:24,329 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:34,501 basehttp 10592 24512 "GET /admin/hw_2/client/?o=-1.6 HTTP/1.1" 200 20213
+INFO 2024-02-28 15:08:34,531 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:35,048 basehttp 10592 24512 "GET /admin/hw_2/client/?o=1.6 HTTP/1.1" 200 20187
+INFO 2024-02-28 15:08:35,080 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:35,601 basehttp 10592 24512 "GET /admin/hw_2/client/?o=-1.6 HTTP/1.1" 200 20213
+INFO 2024-02-28 15:08:35,628 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:36,059 basehttp 10592 24512 "GET /admin/hw_2/client/?o=1.6 HTTP/1.1" 200 20187
+INFO 2024-02-28 15:08:36,089 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:36,971 basehttp 10592 24512 "GET /admin/hw_2/client/?o=-1.6 HTTP/1.1" 200 20213
+INFO 2024-02-28 15:08:36,999 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:37,464 basehttp 10592 24512 "GET /admin/hw_2/client/?o=1.6 HTTP/1.1" 200 20187
+INFO 2024-02-28 15:08:37,493 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:57,033 basehttp 10592 24512 "GET /admin/hw_2/client/?created_at__gte=2024-02-28+00%3A00%3A00%2B00%3A00&created_at__lt=2024-02-29+00%3A00%3A00%2B00%3A00&o=1.6 HTTP/1.1" 200 11391
+INFO 2024-02-28 15:08:57,063 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:08:58,725 basehttp 10592 24512 "GET /admin/hw_2/client/?created_at__gte=2024-02-21+00%3A00%3A00%2B00%3A00&created_at__lt=2024-02-29+00%3A00%3A00%2B00%3A00&o=1.6 HTTP/1.1" 200 15618
+INFO 2024-02-28 15:08:58,758 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:09:01,128 basehttp 10592 24512 "GET /admin/hw_2/client/?o=1.6 HTTP/1.1" 200 20187
+INFO 2024-02-28 15:09:01,158 basehttp 10592 24512 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:09:38,241 autoreload 10592 28908 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:09:38,752 autoreload 29652 17360 Watching for file changes with StatReloader
+INFO 2024-02-28 15:10:05,387 basehttp 29652 25972 "GET /admin/hw_2/client/?o=2.1.6 HTTP/1.1" 200 20636
+INFO 2024-02-28 15:10:05,414 basehttp 29652 25972 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:10:09,012 basehttp 29652 25972 "GET /admin/hw_2/client/?o=-1.2.6 HTTP/1.1" 200 20664
+INFO 2024-02-28 15:10:09,042 basehttp 29652 25972 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:10:27,143 basehttp 29652 25972 "GET /admin/hw_2/client/?o=-1.6 HTTP/1.1" 200 20213
+INFO 2024-02-28 15:10:27,169 basehttp 29652 25972 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:10:28,735 basehttp 29652 25972 "GET /admin/hw_2/client/?o=-1 HTTP/1.1" 200 19685
+INFO 2024-02-28 15:10:28,766 basehttp 29652 25972 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:15,272 autoreload 29652 17360 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:11:15,788 autoreload 26092 27960 Watching for file changes with StatReloader
+INFO 2024-02-28 15:11:18,003 basehttp 26092 8840 "GET /admin/hw_2/client/?o=-1 HTTP/1.1" 200 19685
+INFO 2024-02-28 15:11:18,022 basehttp 26092 8840 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:22,398 autoreload 26092 27960 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:11:22,977 autoreload 24072 29188 Watching for file changes with StatReloader
+INFO 2024-02-28 15:11:24,717 basehttp 24072 24724 "GET /admin/hw_2/client/?o=-1 HTTP/1.1" 200 19685
+INFO 2024-02-28 15:11:24,735 basehttp 24072 24724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:25,433 basehttp 24072 24724 "GET /admin/hw_2/client/?o=-1 HTTP/1.1" 200 19685
+INFO 2024-02-28 15:11:25,451 basehttp 24072 24724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:26,753 basehttp 24072 24724 "GET /admin/hw_2/client/?o=-1 HTTP/1.1" 200 19685
+INFO 2024-02-28 15:11:26,772 basehttp 24072 24724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:28,077 basehttp 24072 24724 "GET /admin/hw_2/order/ HTTP/1.1" 200 25662
+INFO 2024-02-28 15:11:28,108 basehttp 24072 24724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:11:29,726 basehttp 24072 24724 "GET /admin/hw_2/client/ HTTP/1.1" 200 19286
+INFO 2024-02-28 15:11:29,755 basehttp 24072 24724 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:12:26,853 autoreload 24072 29188 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:12:27,418 autoreload 26892 4832 Watching for file changes with StatReloader
+INFO 2024-02-28 15:12:37,065 basehttp 26892 26552 "GET /admin/hw_2/client/ HTTP/1.1" 200 19369
+INFO 2024-02-28 15:12:37,083 basehttp 26892 26552 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:13:00,583 autoreload 26892 4832 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:13:01,101 autoreload 10224 13792 Watching for file changes with StatReloader
+INFO 2024-02-28 15:13:35,130 autoreload 10224 13792 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:13:35,659 autoreload 7780 5140 Watching for file changes with StatReloader
+INFO 2024-02-28 15:15:49,749 autoreload 7780 5140 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:15:50,312 autoreload 26020 16096 Watching for file changes with StatReloader
+INFO 2024-02-28 15:15:53,934 basehttp 26020 27212 "GET /admin/hw_2/order/ HTTP/1.1" 200 30714
+INFO 2024-02-28 15:15:53,972 basehttp 26020 27212 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:16:10,414 basehttp 26020 27212 "GET /admin/hw_2/order/?created_at__gte=2024-02-28+00%3A00%3A00%2B00%3A00&created_at__lt=2024-02-29+00%3A00%3A00%2B00%3A00 HTTP/1.1" 200 11265
+INFO 2024-02-28 15:16:10,444 basehttp 26020 27212 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:16:11,268 basehttp 26020 27212 "GET /admin/hw_2/order/?created_at__gte=2024-02-21+00%3A00%3A00%2B00%3A00&created_at__lt=2024-02-29+00%3A00%3A00%2B00%3A00 HTTP/1.1" 200 15662
+INFO 2024-02-28 15:16:11,299 basehttp 26020 27212 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:16:16,692 basehttp 26020 27212 "GET /admin/hw_2/order/? HTTP/1.1" 200 30714
+INFO 2024-02-28 15:16:16,722 basehttp 26020 27212 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:16:45,962 autoreload 26020 16096 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:16:46,500 autoreload 27264 13020 Watching for file changes with StatReloader
+INFO 2024-02-28 15:16:49,612 basehttp 27264 1888 "GET /admin/hw_2/order/? HTTP/1.1" 200 34003
+INFO 2024-02-28 15:16:49,631 basehttp 27264 1888 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:02,571 autoreload 27264 13020 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:18:03,141 autoreload 15488 27392 Watching for file changes with StatReloader
+INFO 2024-02-28 15:18:05,190 basehttp 15488 28204 "GET /admin/hw_2/order/? HTTP/1.1" 200 31888
+INFO 2024-02-28 15:18:05,208 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:06,884 basehttp 15488 28204 "GET /admin/hw_2/order/?client__id__exact=8 HTTP/1.1" 200 16417
+INFO 2024-02-28 15:18:06,917 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:10,421 basehttp 15488 28204 "GET /admin/hw_2/order/? HTTP/1.1" 200 31888
+INFO 2024-02-28 15:18:10,453 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:12,133 basehttp 15488 28204 "GET /admin/hw_2/order/?client__id__exact=5 HTTP/1.1" 200 17058
+INFO 2024-02-28 15:18:12,161 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:20,140 basehttp 15488 28204 "GET /admin/hw_2/order/? HTTP/1.1" 200 31888
+INFO 2024-02-28 15:18:20,167 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:18:28,422 basehttp 15488 28204 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 15:18:28,455 basehttp 15488 28204 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:15,120 autoreload 15488 27392 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:19:15,631 autoreload 29500 6308 Watching for file changes with StatReloader
+INFO 2024-02-28 15:19:22,245 basehttp 29500 27856 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 15:19:22,261 basehttp 29500 27856 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:22,950 basehttp 29500 27856 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 15:19:22,971 basehttp 29500 27856 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:23,699 basehttp 29500 27856 "GET /admin/hw_2/product/ HTTP/1.1" 200 16417
+INFO 2024-02-28 15:19:23,717 basehttp 29500 27856 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:34,459 autoreload 29500 6308 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:19:34,979 autoreload 25044 11092 Watching for file changes with StatReloader
+INFO 2024-02-28 15:19:37,192 basehttp 25044 17688 "GET /admin/hw_2/product/ HTTP/1.1" 200 28154
+INFO 2024-02-28 15:19:37,210 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:51,984 basehttp 25044 17688 "GET /admin/hw_2/product/?price=69.74 HTTP/1.1" 200 16630
+INFO 2024-02-28 15:19:52,014 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:19:59,955 basehttp 25044 17688 "GET /admin/hw_2/product/?price=69.74 HTTP/1.1" 200 16630
+INFO 2024-02-28 15:19:59,972 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:20:03,225 basehttp 25044 17688 "GET /admin/hw_2/product/?_facets=True&price=69.74 HTTP/1.1" 200 17786
+INFO 2024-02-28 15:20:03,256 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:20:03,300 basehttp 25044 17688 "GET /static/admin/img/icon-hidelink.svg HTTP/1.1" 200 784
+INFO 2024-02-28 15:20:05,106 basehttp 25044 17688 "GET /admin/hw_2/product/?price=69.74 HTTP/1.1" 200 16630
+INFO 2024-02-28 15:20:05,138 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:20:05,704 basehttp 25044 17688 "GET /admin/hw_2/product/?_facets=True&price=69.74 HTTP/1.1" 200 17786
+INFO 2024-02-28 15:20:05,735 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:20:06,866 basehttp 25044 17688 "GET /admin/hw_2/product/?_facets=True HTTP/1.1" 200 29985
+INFO 2024-02-28 15:20:06,894 basehttp 25044 17688 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:20:45,979 autoreload 25044 11092 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:20:46,517 autoreload 19800 26456 Watching for file changes with StatReloader
+INFO 2024-02-28 15:23:06,494 basehttp 19800 19692 "GET /admin/hw_2/product/?q=aw&_facets=True HTTP/1.1" 200 14601
+INFO 2024-02-28 15:23:06,524 basehttp 19800 19692 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:23:15,820 basehttp 19800 19692 "GET /admin/hw_2/product/?_facets=True HTTP/1.1" 200 27315
+INFO 2024-02-28 15:23:25,325 basehttp 19800 19692 "GET /admin/hw_2/product/?q=d&_facets=True HTTP/1.1" 200 26373
+INFO 2024-02-28 15:23:25,358 basehttp 19800 19692 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:23:32,700 basehttp 19800 19692 "GET /admin/hw_2/product/?_facets=True HTTP/1.1" 200 27315
+INFO 2024-02-28 15:26:51,747 autoreload 19800 26456 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:26:52,248 autoreload 27408 3884 Watching for file changes with StatReloader
+INFO 2024-02-28 15:27:54,842 autoreload 27408 3884 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:27:55,364 autoreload 12444 29132 Watching for file changes with StatReloader
+INFO 2024-02-28 15:29:03,106 autoreload 12444 29132 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:29:03,614 autoreload 19732 21256 Watching for file changes with StatReloader
+INFO 2024-02-28 15:29:08,473 basehttp 19732 27844 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:29:08,505 basehttp 19732 27844 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:29:15,404 basehttp 19732 27844 "GET /admin/hw_2/client/9/change/ HTTP/1.1" 200 13826
+INFO 2024-02-28 15:29:15,437 basehttp 19732 27844 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:29:19,940 basehttp 19732 27844 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:31:01,634 autoreload 19732 21256 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:31:02,193 autoreload 26300 16884 Watching for file changes with StatReloader
+INFO 2024-02-28 15:31:17,861 autoreload 26300 16884 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:31:18,365 autoreload 26232 28908 Watching for file changes with StatReloader
+INFO 2024-02-28 15:31:33,866 autoreload 26232 28908 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:31:34,338 autoreload 14408 20204 Watching for file changes with StatReloader
+INFO 2024-02-28 15:31:37,789 basehttp 14408 29624 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19651
+INFO 2024-02-28 15:31:37,829 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:07,173 basehttp 14408 29624 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:32:07,207 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:32,758 basehttp 14408 29624 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:32:32,788 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:33,625 basehttp 14408 29624 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19651
+INFO 2024-02-28 15:32:33,661 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:37,759 basehttp 14408 29624 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:32:37,789 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:42,012 basehttp 14408 29624 "POST /admin/hw_2/client/ HTTP/1.1" 302 0
+INFO 2024-02-28 15:32:42,030 basehttp 14408 29624 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:32:42,052 basehttp 14408 29624 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:42,081 basehttp 14408 17852 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-02-28 15:32:45,066 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:32:45,098 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:32:52,181 basehttp 14408 17852 "GET /admin/hw_2/order/16/change/ HTTP/1.1" 200 27790
+INFO 2024-02-28 15:32:52,213 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:10,311 basehttp 14408 17852 "GET /admin/hw_2/client/8/change/?_to_field=id HTTP/1.1" 200 19708
+INFO 2024-02-28 15:33:10,343 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:12,161 basehttp 14408 17852 "GET /admin/hw_2/order/16/change/ HTTP/1.1" 200 27790
+INFO 2024-02-28 15:33:17,453 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:33:18,736 basehttp 14408 17852 "GET /admin/hw_2/client/ HTTP/1.1" 200 20194
+INFO 2024-02-28 15:33:18,770 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:20,536 basehttp 14408 17852 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19659
+INFO 2024-02-28 15:33:20,568 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:23,502 basehttp 14408 17852 "POST /admin/hw_2/client/8/change/ HTTP/1.1" 302 0
+INFO 2024-02-28 15:33:23,522 basehttp 14408 17852 "GET /admin/hw_2/client/ HTTP/1.1" 200 20406
+INFO 2024-02-28 15:33:23,558 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:25,697 basehttp 14408 17852 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:33:25,725 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:27,278 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:33:27,308 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:31,918 basehttp 14408 17852 "POST /admin/hw_2/order/ HTTP/1.1" 302 0
+INFO 2024-02-28 15:33:31,943 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:33:31,964 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:33,876 basehttp 14408 17852 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:33:33,907 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:36,956 basehttp 14408 17852 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19658
+INFO 2024-02-28 15:33:36,983 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:46,294 basehttp 14408 17852 "POST /admin/hw_2/client/8/change/ HTTP/1.1" 302 0
+INFO 2024-02-28 15:33:46,313 basehttp 14408 17852 "GET /admin/hw_2/client/ HTTP/1.1" 200 20406
+INFO 2024-02-28 15:33:46,348 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:54,823 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:33:54,858 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:33:57,558 basehttp 14408 17852 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:33:57,589 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:34:00,567 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:34:00,600 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:34:06,427 basehttp 14408 17852 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:34:06,459 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:34:09,489 basehttp 14408 17852 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:34:09,518 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:34:10,736 basehttp 14408 17852 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:34:10,771 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:35:42,889 basehttp 14408 17852 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 21296
+INFO 2024-02-28 15:35:42,922 basehttp 14408 17852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:37:33,578 autoreload 14408 20204 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:37:34,103 autoreload 27468 27628 Watching for file changes with StatReloader
+INFO 2024-02-28 15:37:36,990 basehttp 27468 10608 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 21296
+INFO 2024-02-28 15:37:37,010 basehttp 27468 10608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:37:38,103 basehttp 27468 10608 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 21296
+INFO 2024-02-28 15:37:38,121 basehttp 27468 10608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:37:40,999 basehttp 27468 10608 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:37:41,034 basehttp 27468 10608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:37:42,025 basehttp 27468 10608 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19081
+INFO 2024-02-28 15:37:42,054 basehttp 27468 10608 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:38:36,897 autoreload 27468 27628 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:38:37,392 autoreload 28904 23920 Watching for file changes with StatReloader
+ERROR 2024-02-28 15:38:40,018 log 28904 25288 Internal Server Error: /admin/hw_2/client/8/change/
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\forms\models.py", line 310, in __new__
+    fields = fields_for_model(
+             ^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\forms\models.py", line 205, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Client model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "C:\GeekBrains\Django_hw\venv\Lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'created_at' cannot be specified for Client model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class ClientAdmin.
+ERROR 2024-02-28 15:38:40,021 basehttp 28904 25288 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 500 152084
+INFO 2024-02-28 15:39:30,957 autoreload 28904 23920 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:39:31,480 autoreload 23952 25612 Watching for file changes with StatReloader
+INFO 2024-02-28 15:40:10,585 autoreload 23952 25612 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:40:11,094 autoreload 19376 1184 Watching for file changes with StatReloader
+INFO 2024-02-28 15:40:12,869 basehttp 19376 1648 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19126
+INFO 2024-02-28 15:40:12,892 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:21,228 basehttp 19376 1648 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:40:21,261 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:22,559 basehttp 19376 1648 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 21296
+INFO 2024-02-28 15:40:22,589 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:29,631 basehttp 19376 1648 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:40:29,660 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:30,631 basehttp 19376 1648 "GET /admin/hw_2/product/20/change/ HTTP/1.1" 200 13787
+INFO 2024-02-28 15:40:30,666 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:36,846 basehttp 19376 1648 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:40:36,882 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:40:37,723 basehttp 19376 1648 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19126
+INFO 2024-02-28 15:40:37,753 basehttp 19376 1648 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:11,822 autoreload 19376 1184 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:41:12,406 autoreload 29124 20300 Watching for file changes with StatReloader
+INFO 2024-02-28 15:41:14,578 basehttp 29124 11036 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:41:14,609 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:15,673 basehttp 29124 11036 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19650
+INFO 2024-02-28 15:41:15,705 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:21,851 basehttp 29124 11036 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:41:21,879 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:22,638 basehttp 29124 11036 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:41:22,672 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:23,728 basehttp 29124 11036 "GET /admin/hw_2/product/20/change/ HTTP/1.1" 200 13787
+INFO 2024-02-28 15:41:23,757 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:41,477 basehttp 29124 11036 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:41:41,514 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:54,218 basehttp 29124 11036 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:41:54,254 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:57,279 basehttp 29124 11036 "GET /admin/hw_2/order/1/change/ HTTP/1.1" 200 21296
+INFO 2024-02-28 15:41:57,312 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:41:59,085 basehttp 29124 11036 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:41:59,746 basehttp 29124 11036 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:41:59,781 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:00,841 basehttp 29124 11036 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19650
+INFO 2024-02-28 15:42:00,866 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:15,122 basehttp 29124 11036 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:42:15,156 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:28,401 basehttp 29124 11036 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:42:28,433 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:31,725 basehttp 29124 11036 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19650
+INFO 2024-02-28 15:42:31,759 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:47,091 basehttp 29124 11036 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:42:47,118 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:42:48,072 basehttp 29124 11036 "GET /admin/hw_2/product/20/change/ HTTP/1.1" 200 13787
+INFO 2024-02-28 15:42:48,105 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:46:19,453 basehttp 29124 11036 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:46:19,486 basehttp 29124 11036 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:47:47,383 autoreload 29124 20300 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:47:47,935 autoreload 26140 26620 Watching for file changes with StatReloader
+INFO 2024-02-28 15:48:16,906 autoreload 26140 26620 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:48:17,477 autoreload 25864 28292 Watching for file changes with StatReloader
+INFO 2024-02-28 15:48:24,939 autoreload 25864 28292 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:48:25,415 autoreload 1232 13336 Watching for file changes with StatReloader
+INFO 2024-02-28 15:48:27,487 basehttp 1232 21072 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:48:27,512 basehttp 1232 21072 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:48:28,419 basehttp 1232 21072 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:48:28,434 basehttp 1232 21072 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:48:39,640 basehttp 1232 21072 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:48:39,662 basehttp 1232 21072 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:48:49,769 basehttp 1232 21072 "GET /admin/hw_2/order/ HTTP/1.1" 200 32005
+INFO 2024-02-28 15:48:49,785 basehttp 1232 21072 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:04,664 autoreload 1232 13336 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:49:05,180 autoreload 17224 29288 Watching for file changes with StatReloader
+INFO 2024-02-28 15:49:06,589 basehttp 17224 27836 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
+INFO 2024-02-28 15:49:06,607 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:07,878 basehttp 17224 27836 "GET /admin/hw_2/client/2/change/ HTTP/1.1" 200 20797
+INFO 2024-02-28 15:49:07,911 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:09,342 basehttp 17224 27836 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
+INFO 2024-02-28 15:49:10,391 basehttp 17224 27836 "GET /admin/hw_2/client/7/change/ HTTP/1.1" 200 23120
+INFO 2024-02-28 15:49:10,422 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:11,598 basehttp 17224 27836 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
+INFO 2024-02-28 15:49:16,323 basehttp 17224 27836 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:49:16,352 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:19,062 basehttp 17224 27836 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:49:19,096 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:19,926 basehttp 17224 27836 "GET /admin/hw_2/client/8/change/ HTTP/1.1" 200 19650
+INFO 2024-02-28 15:49:19,956 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:22,644 basehttp 17224 27836 "GET /admin/hw_2/client/ HTTP/1.1" 200 20193
+INFO 2024-02-28 15:49:24,115 basehttp 17224 27836 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
+INFO 2024-02-28 15:49:24,146 basehttp 17224 27836 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:49:51,726 autoreload 17224 29288 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:49:52,226 autoreload 27204 26552 Watching for file changes with StatReloader
+INFO 2024-02-28 15:50:18,067 autoreload 27204 26552 C:\GeekBrains\Django_hw\django_project\hw_2\admin.py changed, reloading.
+INFO 2024-02-28 15:50:18,541 autoreload 21932 7216 Watching for file changes with StatReloader
+INFO 2024-02-28 15:50:21,785 basehttp 21932 26504 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
+INFO 2024-02-28 15:50:21,803 basehttp 21932 26504 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:50:23,962 basehttp 21932 26504 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:50:23,994 basehttp 21932 26504 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:50:26,555 basehttp 21932 26504 "GET /admin/hw_2/product/20/change/ HTTP/1.1" 200 13787
+INFO 2024-02-28 15:50:26,590 basehttp 21932 26504 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-02-28 15:50:34,514 basehttp 21932 26504 "GET /admin/hw_2/product/ HTTP/1.1" 200 26297
+INFO 2024-02-28 15:50:36,793 basehttp 21932 26504 "GET /admin/hw_2/order/ HTTP/1.1" 200 33222
