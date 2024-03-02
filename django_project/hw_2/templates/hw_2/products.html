@@ -5,8 +5,17 @@
 {% block content %}
     <h1>Товары</h1>
     {% for product in products %}
-        <h2><a href="{% url 'get_product_by_id' product.id %}">Товар #{{ product.id }}</a></h2>
+    {% if not product.is_deleted %}
+        <h2><a href="{% url 'get_product_by_id' product.id %}">Продукт #{{ product.id }}</a></h2>
             <table border="1">
+        <tr>
+            <th>Изображение продукта</th>
+            {% if product.image %}
+                <td><img src="{{ product.image.url }}" alt="{{ product.name }}" width="100"></td>
+            {% else %}
+                <td>Отсутствует</td>
+            {% endif %}
+        </tr>
         <tr>
             <th>ID</th>
             <td>{{ product.id }}</td>
@@ -32,5 +41,6 @@
             <td>{{ product.count }}</td>
         </tr>
     </table>
+    {% endif %}
     {% endfor %}
 {% endblock %}

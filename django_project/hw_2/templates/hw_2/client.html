@@ -4,7 +4,18 @@
 
 {% block content %}
     <h1>Информация о клиенте</h1>
+    {% if client.is_deleted %}
+        <h2>Клиент удален!</h2>
+    {% endif %}
     <table border="1">
+        <tr>
+            <th>Аватар</th>
+        {% if client.avatar %}
+            <td><img src="{{ client.avatar.url }}" alt="{{ client.name }}" width="100"></td>
+        {% else %}
+            <td>Отсутствует</td>
+        {% endif %}
+        </tr>
         <tr>
           <th>ID</th>
           <td>{{ client.id }}</td>
@@ -30,5 +41,6 @@
             <td>{{ client.created_at }}</td>
         </tr>
     </table>
+    <a href="{% url 'edit_client' client.id %}">Редактировать</a>
     <h3><a href="{% url 'get_product_order_statistics' client.id %}">Статистика по заказам</a></h3>
 {% endblock %}

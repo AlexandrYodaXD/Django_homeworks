@@ -11,7 +11,11 @@ class Client(models.Model):
     phone = models.CharField(max_length=20)
     address = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
+    avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
 
 
 class Product(models.Model):
@@ -20,7 +24,11 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     count = models.PositiveIntegerField(default=0, validators=[MinValueValidator(0)])
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='products/', null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
 
 
 class Order(models.Model):
@@ -34,27 +42,6 @@ class Order(models.Model):
         total_price = sum(item.product.price * item.quantity for item in OrderItem.objects.filter(order_id=self.id))
         self.total_price = total_price
         Order.objects.filter(id=self.id).update(total_price=total_price)
-
-    # TODO: На удаление, функционал дублируется в update_order
-    # def create_order(self, product_quantities: dict[Product, int]):
-    #     if not self.id:
-    #         self.save()
-    #
-    #     for product, quantity in product_quantities.items():
-    #         if 0 < quantity <= product.count:
-    #             item = OrderItem(order=self, product=product, quantity=quantity)
-    #             product.count -= quantity  # Уменьшаем количество продукта на складе
-    #
-    #             item.save()
-    #             product.save()
-    #         else:
-    #             self.is_deleted = True
-    #             self.save()
-    #             raise ValidationError(
-    #                 f'Invalid quantity for product {product.name}. Current quantity: {product.count}, '
-    #                 f'but requested quantity: {quantity}')
-    #
-    #     self.update_total_price()  # Обновляем общую стоимость заказа
 
     def update_order(self, operation: str, product_quantities: dict[Product, int]):
         with transaction.atomic():
@@ -94,6 +81,9 @@ class Order(models.Model):
                     raise ValidationError('Invalid operation')
 
         self.update_total_price()
+
+    def __str__(self):
+        return f'Заказ №{self.id}. Клиент: {self.client.name}'
 
     def save(self, *args, **kwargs):
         with transaction.atomic():
