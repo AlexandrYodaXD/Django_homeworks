@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center mt-5 mb-5">Пять случайных рецептов</h2>
+        </div>
+    </div>
+    <div class="card-deck">
+    {% for recipe in recipes %}
+    <div class="card p-2">
+        <img src="{{ recipe.image.url }}" class="card-img-top" alt="{{ recipe.title }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ recipe.title }}</h5>
+            <p class="card-text">Время приготовления: {{ recipe.preparation_time }}</p>
+            <p class="card-text">Автор: {{ recipe.author }}</p>
+        </div>
+        <div class="bottom text-center p-2">
+            <a href="{% url 'recipe_detail' recipe.id %}" class="btn btn-primary">Подробнее</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

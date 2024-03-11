@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="mx-auto">
+    <form method="post" enctype="multipart/form-data" class="form">
+        {% csrf_token %}
+        <table class="table">
+            {% for field in form %}
+            <tr>
+                <td>{{ field.label }}</td>
+                <td>{{ field }}</td>
+            </tr>
+            {% endfor %}
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn btn-primary btn-block">Сохранить</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Вход{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="mx-auto">
+        <form method="post" class="form">
+            {% csrf_token %}
+            <table class="table">
+                {% for field in form %}
+                <tr>
+                    <td>{{ field.label }}</td>
+                    <td>{{ field }}</td>
+                </tr>
+                {% endfor %}
+
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="text-center mt-3">
+            <p>Нет аккаунта? <a href="{% url 'user_register' %}">Зарегистрируйтесь</a>.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

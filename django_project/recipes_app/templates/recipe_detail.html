@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ recipe.title }}{% endblock %}
+
+{% block content %}
+<div class="col-md-6">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">{{ recipe.title }}</h5>
+            <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="img-fluid mb-3">
+            <p class="card-text">Категория: {{ recipe.category }}</p>
+            <p class="card-text">{{ recipe.description }}</p>
+            <p class="card-text">Время приготовления: {{ recipe.preparation_time }}</p>
+            <p class="card-text">Автор: {{ recipe.author }}</p>
+            <p class="card-text">Шаги приготовления: {{ recipe.preparation_steps }}</p>
+            {% if request.user == recipe.author %}
+            <a href="{% url 'recipe_edit' recipe.id %}" class="btn btn-primary">Редактировать</a>
+            {% endif %}
+            {% if not recipe.is_deleted %}
+                <a href="{% url 'recipe_delete' recipe.id %}" class="btn btn-danger">Удалить</a>
+            {% else %}
+                <a href="{% url 'recipe_restore' recipe.id %}" class="btn btn-danger">Восстановить</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
